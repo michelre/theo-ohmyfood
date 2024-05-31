@@ -1,0 +1,12 @@
+@import 'variables.scss';
+
+
+body {
+    background: $green-dark;
+}
+
+.card {
+    h3 {
+        color: red;
+    }
+}

@@ -1,9 +1,59 @@
 body {
-  background: #008766;
+  margin: 0;
+}
+
+header {
+  background: white;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .card h3 {
-  color: red;
+  color: orange;
+}
+
+.menu-entry {
+  border-radius: 15px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-entry:hover .menu-checkbox {
+  width: 60px;
+}
+
+.menu-entry .menu-entry-content {
+  padding: 14px 15px;
+  overflow: hidden;
+  width: 100%;
+}
+.menu-entry .menu-entry-content p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.menu-entry-price {
+  font-weight: bold;
+  margin-top: auto;
+  padding: 15px;
+  flex-shrink: 0;
+}
+
+.menu-checkbox {
+  width: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: #99E2D0;
+  transition: all 0.25s linear;
+  flex-shrink: 0;
+}
+
+body {
+  background: #008766;
 }
 
 /*# sourceMappingURL=style.css.map */

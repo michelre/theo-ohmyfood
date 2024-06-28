@@ -1,12 +1,16 @@
-@import 'variables.scss';
+@import "base/reset";
+
+@import "layout/header";
+
+@import 'pages/home';
+@import "pages/restaurant";
+
+@import 'components/cards';
+@import 'components/menu-entry';
+
+@import 'utils/variables.scss';
 
 
 body {
     background: $green-dark;
-}
-
-.card {
-    h3 {
-        color: red;
-    }
 }

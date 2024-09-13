@@ -1,0 +1,72 @@
+.restaurant-cards {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 50px;
+    column-gap: 100px;
+}
+
+.restaurant-card {
+
+    border-radius: 15px;
+
+    a {
+        color: black;
+        text-decoration: none;
+        position: relative;
+        display: block;
+        height: 100%;
+    }
+    
+    img {
+        width: 100%;
+        height: 176px;
+        object-fit: cover;
+        border-top-left-radius: 15px; 
+        border-top-right-radius: 15px; 
+    }
+
+
+}
+
+.restaurant-card-description {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    box-sizing: border-box;
+    background: white;
+    border-bottom-left-radius: 15px; 
+    border-bottom-right-radius: 15px; 
+
+    p {
+        font-weight: 100;
+        margin-top: 5px;
+    }
+
+    i {
+        width: 22px;
+        flex-shrink: 0;
+    }
+}
+
+.restaurant-card-title {
+    width: 100%;
+}
+
+.restaurant-badge-new {
+    background: $green-light;
+    color: $green-dark;
+    border-radius: 2px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .restaurant-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

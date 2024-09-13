@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../../fonts/roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-style: normal;
+    src: url('../../fonts/roboto/Roboto-Light.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-style: normal;
+    src: url('../../fonts/roboto/Roboto-Bold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Shrinkhand';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../../fonts/shrinkhand/Shrikhand-Regular.ttf') format('truetype');
+  }
+  
+
+body {
+    font-family: Roboto, sans-serif;
+}

@@ -1,0 +1,52 @@
+@import "../utils/variables";
+
+.menu-entry {
+    border-radius: 15px;    
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+    &:hover .menu-checkbox {
+        width: 60px;
+    }
+}
+
+.menu-entry .menu-entry-content {
+    padding: 14px 15px;
+    overflow: hidden;
+    width: 100%;
+
+    p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+        font-weight: 300; 
+    }
+}
+
+.menu-entry-price {
+    font-weight: bold;
+    margin-top: auto;
+    padding: 15px;
+    flex-shrink: 0;
+}
+
+.menu-checkbox {
+    width: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: $green-light;
+    transition: all .250s linear;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-circle-check {
+    font-size: 20px;
+    color: white;
+    transition: all 1s linear;
+}

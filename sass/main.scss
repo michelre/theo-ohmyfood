@@ -10,6 +10,7 @@ $fa-font-path: "../node_modules/@fortawesome/fontawesome-free/webfonts"; // Surc
 @import 'utils/variables.scss';
 
 @import "layout/header";
+@import "layout/footer";
 @import "layout/global";
 
 
@@ -18,5 +19,6 @@ $fa-font-path: "../node_modules/@fortawesome/fontawesome-free/webfonts"; // Surc
 
 @import 'components/cards';
 @import 'components/menu-entry';
+@import 'components/button';
 
 

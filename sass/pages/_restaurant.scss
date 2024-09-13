@@ -1,3 +1,68 @@
 .restaurant-title {
     font-family: Shrinkhand;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.cover {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    height: 383px;
+}
+
+.menu {
+    width: 100%;
+    background: $grey;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin: auto;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: -40px;
+
+    .button {
+        margin: auto;        
+    }
+}
+
+.menu-container {
+    margin-bottom: 40px;
+}
+
+.menu-title {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 22px;
+    position: relative;
+
+    &::after {
+        content: '';
+        width: 40px;
+        height: 3px;
+        background: $green-light;
+        position: absolute;
+        bottom: -7px;
+        left: 0;
+
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .menu { 
+        width: 75%;
+    }
+
+    .restaurant-title {
+        justify-content: center;
+
+        i {
+            margin-left: 25px;
+        }
+    }
+
 }

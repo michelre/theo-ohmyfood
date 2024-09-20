@@ -8309,8 +8309,8 @@ h3, p {
 }
 @font-face {
   font-family: "Shrinkhand";
-  font-weight: 500;
-  font-style: normal;
+  font-weight: 400;
+  font-style: italic;
   src: url("../../fonts/shrinkhand/Shrikhand-Regular.ttf") format("truetype");
 }
 body {

@@ -4,16 +4,115 @@
     padding: 0 16px;
 }
 
+@keyframes loaderbg {
+    from {
+        opacity: 75%;
+    }
+
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes loader {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes icon-loader {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .loaderbackground {
     width: 100%;
     height: 100%;
     background-color: black;
-    z-index: 1000;
+    z-index: 2;
     position: fixed;
-    opacity: 50%;
-    transition: opacity 0.25s;
+    animation: 3s linear 5s both running loaderbg;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+    animation: 2s linear 5s both running loader;
+
+    p {
+        text-align: center;
+        font-size: 24px;
+        color: white;
+    }
+}
+
+.fa-circle-notch {
+    font-size: 48px;
+    color: white;  
+    display: block;
+    margin-bottom: 24px;
+    text-align: center;  
+    animation: 3s linear 0s backwards running infinite icon-loader;
 }
 
 .loaderbackground:after {
  opacity: 0%;
+}
+
+@keyframes menuopacity {
+   from {
+    opacity: 0;
+   }
+   
+   to {
+    opacity: 1;
+   }
+}
+
+.menu-entry{
+    &.m1 {
+        animation: .250s linear 0s both running menuopacity;
+    }
+
+    &.m2 {
+        animation: .250s linear 0.250s both running menuopacity;
+    }
+
+    &.m3 {
+        animation: .250s linear 0.5s both running menuopacity;
+    }
+
+    &.m4 {
+        animation: .250s linear 0.750s both running menuopacity;
+    }
+
+    &.m5 {
+        animation: .250s linear 1s both running menuopacity;
+    }
+
+    &.m6 {
+        animation: .250s linear 1.250s both running menuopacity;
+    }
+
+    &.m7 {
+        animation: .250s linear 1.5s both running menuopacity;
+    }
+
+    &.m8 {
+        animation: .250s linear 1.750s both running menuopacity;
+    }
 }

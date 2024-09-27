@@ -7,4 +7,27 @@
     border: none;
     border-radius: 25px;
     display: block;
+    position: relative;
+
+    &::after {
+        content: '';
+        width: 100%;
+        display: block;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 50px;
+        background: white;
+        opacity: 0;
+        transition: opacity .250s linear;
+    }
+
+    &:hover {
+        &::after {
+            opacity: .2;
+        }
+    }
+
+
 }

@@ -8320,7 +8320,6 @@ body {
 header {
   background: white;
   height: 80px;
-  /*position: fixed;*/
   top: 0;
   width: 100%;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
@@ -8328,6 +8327,7 @@ header {
   align-items: center;
   padding: 0 25px;
   box-sizing: border-box;
+  z-index: 15;
 }
 
 header a {
@@ -8402,9 +8402,46 @@ footer .logo {
   padding: 0 16px;
 }
 
+.loaderbackground {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1000;
+  position: fixed;
+  opacity: 50%;
+  transition: opacity 0.25s;
+}
+
+.loaderbackground:after {
+  opacity: 0%;
+}
+
 .restaurants {
   background-color: #F6F6F6;
   padding: 30px 0;
+}
+
+/** Test burger menu solutions HTML/CSS & JS */
+input#menu {
+  display: none;
+}
+
+input#menu:checked + .menu-mobile {
+  top: 80px;
+}
+
+.menu-mobile {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: blue;
+  z-index: 10;
+  transition: top 0.5s ease-in-out;
+}
+.menu-mobile.open {
+  top: 80px;
 }
 
 .restaurant-title {
@@ -8465,8 +8502,8 @@ footer .logo {
   .restaurant-title {
     justify-content: center;
   }
-  .restaurant-title i {
-    margin-left: 25px;
+  .restaurant-title .heart {
+    margin-left: 50px;
   }
 }
 .restaurant-cards {
@@ -8593,6 +8630,52 @@ footer .logo {
   border: none;
   border-radius: 25px;
   display: block;
+  position: relative;
+}
+.button::after {
+  content: "";
+  width: 100%;
+  display: block;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50px;
+  background: white;
+  opacity: 0;
+  transition: opacity 0.25s linear;
+}
+.button:hover::after {
+  opacity: 0.2;
+}
+
+.fa-solid.fa-heart {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 0.25s linear;
+}
+
+.fa-regular.fa-heart {
+  z-index: 1;
+}
+
+.fa-heart {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heart {
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+.heart:hover .fa-solid.fa-heart {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,31 @@
+.fa-solid.fa-heart {
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    transition: opacity .250s linear;    
+}
+
+.fa-regular.fa-heart {    
+    z-index: 1;
+}
+
+.fa-heart {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heart {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    position: relative; 
+
+    &:hover {
+        .fa-solid.fa-heart{
+            opacity: 1;
+        }
+    }
+}

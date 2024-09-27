@@ -10,11 +10,15 @@
 </head>
 
 <body>
+<div class="loaderbackground"></div>
 
     <header>        
         <a href="/" class="logo">
             <img src="./images/logo/ohmyfood.png" srcset="./images/logo/ohmyfood@2x.svg" alt="Logo OhMyFood">
-        </a>
+        </a>        
+        <!--<label for="menu">
+            <i class="fa-solid fa-bars"></i>
+        </label>-->     
     </header>
 
     <section class="restaurants">
@@ -30,7 +34,10 @@
                                 <h3>La palette du goût</h3>
                                 <p>Menilmontant</p>
                             </div>                 
-                            <i class="far fa-heart"></i>       
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>    
+                                <i class="fa-solid fa-heart"></i>
+                            </div>    
                         </div>
                         <div class="restaurant-badge-new">Nouveau</div>
                     </a>                    
@@ -44,7 +51,10 @@
                                 <h3>La note enchantée</h3>
                                 <p>Charonne</p>
                             </div>                 
-                            <i class="far fa-heart"></i>       
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>    
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
                         </div>
                         <div class="restaurant-badge-new">Nouveau</div>
                     </a>
@@ -58,7 +68,10 @@
                                 <h3>A la française</h3>
                                 <p>Cité Rouge</p>
                             </div>                 
-                            <i class="far fa-heart"></i>       
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>    
+                                <i class="fa-solid fa-heart"></i>
+                            </div>     
                         </div>
                     </a>
                 </li>
@@ -71,7 +84,10 @@
                                 <h3>Le délice des sens</h3>
                                 <p>Folie-Méricourt</p>
                             </div>                 
-                            <i class="far fa-heart"></i>       
+                            <div class="heart">
+                                <i class="fa-regular fa-heart"></i>    
+                                <i class="fa-solid fa-heart"></i>
+                            </div>      
                         </div>
                     </a>
                 </li>
@@ -111,7 +127,20 @@
         </ul>
     </footer>
 
+    <!--<input type="checkbox" id="menu">
+    <div class="menu-mobile">
+        <div>Entrée 1</div>
+        <div>Entrée 2</div>
+        <div>Entrée 3</div>
+    </div>-->
 
+    <script>
+        /*const burger = document.querySelector('.fa-bars')
+        burger.addEventListener('click', () => {
+            const menuMobile = document.querySelector('.menu-mobile')
+            menuMobile.classList.toggle('open')
+        })*/
+    </script>
 </body>
 
 </html>

@@ -1,3 +1,14 @@
+.restaurant-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .heart {
+        font-size: 32px;
+        margin-left: 12px;
+    }
+}
+
 .restaurant-title {
     font-family: Shrinkhand;
     text-align: center;

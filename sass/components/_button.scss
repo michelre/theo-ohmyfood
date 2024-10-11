@@ -8,6 +8,11 @@
     border-radius: 25px;
     display: block;
     position: relative;
+    margin: auto;
+
+    &.small {
+        padding: 16px 18px;
+    }
 
     &::after {
         content: '';
